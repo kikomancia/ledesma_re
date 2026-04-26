@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ledesma Clan Reunion 2026</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#FFF8E7',
+                            primary: '#D4AF37', // Gold
+                            secondary: '#2C5F2D', // Forest Green
+                            dark: '#1A361A',
+                            accent: '#97BC62'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-pattern {
+            background-color: #2C5F2D;
+            background-image: radial-gradient(#97BC62 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: #D4AF37;
+        }
+        @media (min-width: 768px) {
+            .timeline-line::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body class="bg-brand-light text-gray-800 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-people-group text-brand-secondary text-2xl"></i>
+                    <span class="font-serif font-bold text-xl text-brand-dark">Ledesma 2026</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-600 hover:text-brand-secondary font-medium transition">Home</a>
+                    <a href="#families" class="text-gray-600 hover:text-brand-secondary font-medium transition">The Families</a>
+                    <a href="#program" class="text-gray-600 hover:text-brand-secondary font-medium transition">Program</a>
+                    <a href="#committees" class="text-gray-600 hover:text-brand-secondary font-medium transition">Committees</a>
+                    <a href="https://tally.so/r/68QP7B" target="_blank" class="bg-brand-secondary hover:bg-green-800 text-white px-5 py-2 rounded-full font-medium transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5">RSVP Now</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center gap-4">
+                    <a href="https://tally.so/r/68QP7B" target="_blank" class="bg-brand-secondary text-white px-4 py-1.5 rounded-full text-sm font-medium shadow">RSVP</a>
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-gray-600 font-medium hover:bg-gray-50 rounded-md">Home</a>
+                <a href="#families" class="block px-3 py-2 text-gray-600 font-medium hover:bg-gray-50 rounded-md">The Families</a>
+                <a href="#program" class="block px-3 py-2 text-gray-600 font-medium hover:bg-gray-50 rounded-md">Program</a>
+                <a href="#committees" class="block px-3 py-2 text-gray-600 font-medium hover:bg-gray-50 rounded-md">Committees</a>
+                <a href="https://tally.so/r/68QP7B" target="_blank" class="block px-3 py-2 text-brand-secondary font-bold hover:bg-gray-50 rounded-md">RSVP Now <i class="fa-solid fa-external-link-alt text-sm ml-1"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative pt-24 pb-32 flex items-center justify-center min-h-[90vh] hero-pattern text-white overflow-hidden">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-secondary/80 to-brand-dark/95"></div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <span class="inline-block py-1 px-3 rounded-full bg-brand-primary/20 border border-brand-primary/50 text-brand-primary font-semibold text-sm mb-6 tracking-widest uppercase">
+                First Together, First Reunion
+            </span>
+            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 text-white leading-tight">
+                Ledesma Clan <br/><span class="text-brand-primary">Reunion 2026</span>
+            </h1>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-lg md:text-xl font-medium mb-10 text-gray-200">
+                <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-calendar text-brand-primary"></i>
+                    Sunday, December 27, 2026
+                </div>
+                <div class="hidden md:block text-brand-primary">•</div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-users text-brand-primary"></i>
+                    6 Families, 1 Legacy
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://tally.so/r/68QP7B" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-brand-dark px-8 py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    RSVP Here <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                </a>
+                <a href="#program" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-primary hover:bg-yellow-600 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    View Full Program <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Decorative bottom wave -->
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 120" class="fill-brand-light w-full h-auto">
+                <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- The 6 Families Section -->
+    <section id="families" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-serif font-bold text-brand-dark mb-4">The 6 Families</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Honoring our roots and celebrating the branches of the Ledesma family tree.</p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+            <!-- Family Cards -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition group">
+                <div class="w-16 h-16 mx-auto bg-brand-light text-brand-secondary rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-leaf text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-serif font-bold text-brand-dark">Tuding Family</h3>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition group">
+                <div class="w-16 h-16 mx-auto bg-brand-light text-brand-secondary rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-leaf text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-serif font-bold text-brand-dark">Reynalda Family</h3>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition group">
+                <div class="w-16 h-16 mx-auto bg-brand-light text-brand-secondary rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-leaf text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-serif font-bold text-brand-dark">Arsenio Family</h3>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition group">
+                <div class="w-16 h-16 mx-auto bg-brand-light text-brand-secondary rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-leaf text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-serif font-bold text-brand-dark">Inggo Family</h3>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition group">
+                <div class="w-16 h-16 mx-auto bg-brand-light text-brand-secondary rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-leaf text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-serif font-bold text-brand-dark">Ted Family</h3>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition group">
+                <div class="w-16 h-16 mx-auto bg-brand-light text-brand-secondary rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-leaf text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-serif font-bold text-brand-dark">Tere Family</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Timeline Section -->
+    <section id="program" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-brand-dark mb-4">Event Schedule</h2>
+                <p class="text-gray-600">Here's what to expect throughout our special day together.</p>
+            </div>
+
+            <div class="relative timeline-line">
+                
+                <!-- Registration -->
+                <div class="relative z-10 mb-12 flex flex-col md:flex-row items-start md:items-center">
+                    <div class="md:w-1/2 md:pr-12 md:text-right flex-shrink-0 order-2 md:order-1 mt-4 md:mt-0 pl-12 md:pl-0">
+                        <h3 class="text-2xl font-bold text-brand-dark">Opening & Registration</h3>
+                        <p class="text-gray-600 mt-2">Arrival & Registration. Fixing of Family Areas.</p>
+                        <p class="text-sm text-brand-secondary font-medium mt-2"><i class="fa-solid fa-user-check mr-1"></i> Assigned: Krezia, Sarah, Julie Ann</p>
+                    </div>
+                    <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 bg-brand-primary text-white rounded-full flex items-center justify-center border-4 border-white shadow order-1 md:order-2">
+                        <i class="fa-regular fa-clipboard"></i>
+                    </div>
+                    <div class="md:w-1/2 md:pl-12 flex-shrink-0 order-3 pl-12 md:pl-0 mt-1 md:mt-0">
+                        <span class="inline-block bg-brand-light text-brand-secondary font-bold py-1 px-4 rounded-full border border-brand-secondary/20">
+                            7:00 AM - 8:00 AM
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Part I -->
+                <div class="relative z-10 mb-12 flex flex-col md:flex-row items-start md:items-center">
+                    <div class="md:w-1/2 md:pr-12 md:text-right flex-shrink-0 order-2 md:order-1 mt-4 md:mt-0 pl-12 md:pl-0">
+                        <span class="inline-block bg-brand-light text-brand-secondary font-bold py-1 px-4 rounded-full border border-brand-secondary/20 md:hidden mb-3">
+                            8:00 AM - 11:00 AM
+                        </span>
+                        <div class="hidden md:block">
+                            <span class="inline-block bg-brand-light text-brand-secondary font-bold py-1 px-4 rounded-full border border-brand-secondary/20">
+                                8:00 AM - 11:00 AM
+                            </span>
+                        </div>
+                    </div>
+                    <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 bg-brand-secondary text-white rounded-full flex items-center justify-center border-4 border-white shadow order-1 md:order-2">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                    <div class="md:w-1/2 md:pl-12 flex-shrink-0 order-3 pl-12 md:pl-0 mt-4 md:mt-0">
+                        <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+                            <h3 class="text-xl font-bold text-brand-dark mb-2">Part I - Program Proper</h3>
+                            <p class="text-sm italic text-gray-500 mb-4">* Pica-pica food available during this time</p>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-hands-praying mt-1 text-brand-primary"></i> 
+                                    <div><strong>Opening Prayer</strong> <br/><span class="text-sm text-gray-500">Assigned: [To be assigned]</span></div>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-camera mt-1 text-brand-primary"></i> 
+                                    <div><strong>Introduction of the 6 Families</strong> <br/><span class="text-sm text-gray-500">With photo session on stage</span></div>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-star mt-1 text-brand-primary"></i> 
+                                    <div><strong>Intermission Number / Family Competition</strong></div>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-gamepad mt-1 text-brand-primary"></i> 
+                                    <div><strong>Games (Kids & Adults)</strong> <br/><span class="text-sm text-gray-500">Facilitators: Sarah, Krezia, Kiko, Vangie</span></div>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-music mt-1 text-brand-primary"></i> 
+                                    <div><strong>Intermission</strong> <br/><span class="text-sm text-gray-500">Assigned: [To be assigned]</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part II -->
+                <div class="relative z-10 mb-12 flex flex-col md:flex-row items-start md:items-center">
+                    <div class="md:w-1/2 md:pr-12 md:text-right flex-shrink-0 order-2 md:order-1 mt-4 md:mt-0 pl-12 md:pl-0">
+                        <div class="bg-brand-light/50 p-6 rounded-xl border border-brand-primary/20 shadow-sm">
+                            <h3 class="text-xl font-bold text-brand-dark mb-3">Part II - Lunch & Fellowship</h3>
+                            <ul class="space-y-2 text-gray-700 md:inline-block md:text-left">
+                                <li><i class="fa-solid fa-utensils text-brand-primary mr-2"></i> Lunch Time</li>
+                                <li><i class="fa-solid fa-comments text-brand-primary mr-2"></i> Get-Together / Sharing Moments</li>
+                                <li><i class="fa-solid fa-music text-brand-primary mr-2"></i> Intermission</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 bg-brand-primary text-white rounded-full flex items-center justify-center border-4 border-white shadow order-1 md:order-2">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div class="md:w-1/2 md:pl-12 flex-shrink-0 order-3 pl-12 md:pl-0 mt-1 md:mt-0">
+                        <span class="inline-block bg-brand-light text-brand-secondary font-bold py-1 px-4 rounded-full border border-brand-secondary/20">
+                            11:00 AM - 1:00 PM
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Part III -->
+                <div class="relative z-10 mb-12 flex flex-col md:flex-row items-start md:items-center">
+                    <div class="md:w-1/2 md:pr-12 md:text-right flex-shrink-0 order-2 md:order-1 mt-4 md:mt-0 pl-12 md:pl-0">
+                        <span class="inline-block bg-brand-light text-brand-secondary font-bold py-1 px-4 rounded-full border border-brand-secondary/20 md:hidden mb-3">
+                            1:00 PM - 5:00 PM
+                        </span>
+                        <div class="hidden md:block">
+                            <span class="inline-block bg-brand-light text-brand-secondary font-bold py-1 px-4 rounded-full border border-brand-secondary/20">
+                                1:00 PM - 5:00 PM
+                            </span>
+                        </div>
+                    </div>
+                    <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 bg-brand-secondary text-white rounded-full flex items-center justify-center border-4 border-white shadow order-1 md:order-2">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <div class="md:w-1/2 md:pl-12 flex-shrink-0 order-3 pl-12 md:pl-0 mt-4 md:mt-0">
+                        <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+                            <h3 class="text-xl font-bold text-brand-dark mb-4">Part III - Afternoon Program</h3>
+                            <ul class="space-y-4 text-gray-700">
+                                <li>
+                                    <div class="font-bold flex items-center gap-2"><i class="fa-solid fa-medal text-brand-primary"></i> Awarding of Prizes</div>
+                                    <div class="text-sm text-gray-600 ml-6">(Cash & ______________)</div>
+                                    <ul class="list-disc ml-10 text-sm mt-1 text-gray-600">
+                                        <li>Earliest Complete Family</li>
+                                        <li>Largest Family Attendance</li>
+                                        <li>Winners of Family Competitions</li>
+                                    </ul>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-gift mt-1 text-brand-primary"></i> 
+                                    <div><strong>Token Giving / Bouquet Presentation</strong> <br/><span class="text-sm text-gray-500">Assigned: Tere & Lily</span></div>
+                                </li>
+                                <li>
+                                    <div class="font-bold flex items-center gap-2"><i class="fa-solid fa-camera-retro text-brand-primary"></i> Photo Sessions</div>
+                                    <ul class="list-disc ml-8 text-sm text-gray-600">
+                                        <li>Per Family</li>
+                                        <li>Whole Clan</li>
+                                    </ul>
+                                </li>
+                                <li class="flex items-start gap-2 bg-brand-light/50 p-2 rounded">
+                                    <i class="fa-solid fa-microphone-lines mt-1 text-brand-secondary"></i> 
+                                    <div><strong>Community Singing</strong> <br/><span class="text-brand-secondary italic font-medium">🎵 "If We Hold On Together"</span></div>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-heart mt-1 text-brand-primary"></i> 
+                                    <div><strong>Words of Gratitude</strong> <br/><span class="text-sm text-gray-500">Kuya Vic & Tito Fernan</span></div>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-bullhorn mt-1 text-brand-primary"></i> 
+                                    <div><strong>Turnover / Announcement</strong> <br/><span class="text-sm text-gray-500">For Next Reunion</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Closing -->
+                <div class="relative z-10 flex flex-col md:flex-row items-start md:items-center">
+                    <div class="md:w-1/2 md:pr-12 md:text-right flex-shrink-0 order-2 md:order-1 mt-4 md:mt-0 pl-12 md:pl-0">
+                        <h3 class="text-2xl font-bold text-brand-dark mb-1">Closing Activity</h3>
+                        <p class="text-brand-secondary font-bold uppercase text-lg tracking-wide">Swimming Party / Free Time / Party Party!</p>
+                    </div>
+                    <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center border-4 border-white shadow order-1 md:order-2">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <div class="md:w-1/2 md:pl-12 flex-shrink-0 order-3 pl-12 md:pl-0 mt-1 md:mt-0">
+                        <span class="inline-block bg-blue-50 text-blue-600 font-bold py-1 px-4 rounded-full border border-blue-200">
+                            5:00 PM Onwards
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Master of Ceremony & Committees -->
+    <section id="committees" class="py-20 bg-brand-light">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    
+                    <!-- Emcees -->
+                    <div class="bg-brand-secondary p-10 text-white flex flex-col justify-center items-center text-center">
+                        <i class="fa-solid fa-microphone-stand text-5xl mb-6 text-brand-primary opacity-80"></i>
+                        <h2 class="text-3xl font-serif font-bold mb-8">Masters of Ceremony</h2>
+                        <div class="space-y-4 w-full max-w-sm">
+                            <div class="bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/20">
+                                <p class="text-xl font-medium">Ms. Ileen Oraa</p>
+                            </div>
+                            <div class="bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/20">
+                                <p class="text-xl font-medium">Giro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Assignments -->
+                    <div class="p-10">
+                        <h2 class="text-2xl font-serif font-bold text-brand-dark mb-8 border-b pb-4">Key Assignments</h2>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0 text-brand-secondary">
+                                    <i class="fa-solid fa-clipboard-user text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg">Registration & Area Prep</h4>
+                                    <p class="text-gray-600">Krezia, Sarah, Julie Ann</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0 text-brand-secondary">
+                                    <i class="fa-solid fa-volleyball text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg">Games Facilitators</h4>
+                                    <p class="text-gray-600">Sarah, Krezia, Kiko, Vangie</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0 text-brand-secondary">
+                                    <i class="fa-solid fa-gifts text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg">Token & Bouquet Presentation</h4>
+                                    <p class="text-gray-600">Tere & Lily</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-full bg-brand-light flex items-center justify-center flex-shrink-0 text-brand-secondary">
+                                    <i class="fa-solid fa-comment-dots text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg">Words of Gratitude</h4>
+                                    <p class="text-gray-600">Kuya Vic & Tito Fernan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white py-12 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="mb-8">
+                <i class="fa-solid fa-people-group text-brand-primary text-4xl mb-4"></i>
+                <h2 class="text-2xl font-serif font-bold">Ledesma Clan Reunion 2026</h2>
+                <p class="text-gray-400 mt-2 font-light">"First Together, First Reunion"</p>
+            </div>
+            
+            <div class="bg-white/5 border border-white/10 rounded-xl p-6 mb-8 inline-block">
+                <p class="text-sm text-gray-400 mb-2 uppercase tracking-widest">Community Singing</p>
+                <p class="text-xl font-medium text-brand-primary italic">"If We Hold On Together"</p>
+            </div>
+
+            <p class="text-sm text-gray-500 mt-8 border-t border-white/10 pt-8">
+                &copy; 2026 Ledesma Family. See you on December 27!
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
